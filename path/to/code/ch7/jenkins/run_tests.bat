@@ -4,12 +4,9 @@ REM Windows batch script using Git and WORKSPACE
 REM ================================
 
 REM Paths relative to workspace
-set tasks_proj_dir=%WORKSPACE%\tasks_proj_v2
-set start_tests_dir=%tasks_proj_dir%\tests
+set tasks_proj_dir=%WORKSPACE%\path\to\code\ch7\tasks_proj_v2
+set start_tests_dir=%WORKSPACE%\path\to\code\ch7\tasks_proj_v2\tests
 set results_file=%WORKSPACE%\results.xml
-
-REM Activate virtual environment if you have one
-call %WORKSPACE%\venv\Scripts\activate.bat
 
 REM Install project
 py -m pip install -e %tasks_proj_dir%
@@ -19,3 +16,5 @@ cd %start_tests_dir%
 py -m pytest --junit-xml=%results_file%
 
 echo Tests complete.
+exit /b %errorlevel%
+
