@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: tasks
+Version: 0.1.1
+Summary: Minimal Project Task Management
+Home-page: https://pragprog.com/book/bopytest
+Author: Brian Okken
+Author-email: Please use pythontesting.net contact form.
+License: proprietary
+License-File: LICENSE
+Requires-Dist: click==7.1.2
+Requires-Dist: tinydb==3.15.1
+Requires-Dist: six
+Requires-Dist: pytest
+Requires-Dist: pytest-mock
+Provides-Extra: mongo
+Requires-Dist: pymongo; extra == "mongo"
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
